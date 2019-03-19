@@ -6,3 +6,8 @@ services:
     ports:
       - target: 80
         published: 5000
+    deploy:        
+      replicas: 1
+      placement:
+          constraints:
+            - engine.labels.os == windows   # place service only on Windows nodes
