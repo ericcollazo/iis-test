@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+   iis-test:
+    image: iis-test
+    ports:
+      - target: 80
+        published: 5000
